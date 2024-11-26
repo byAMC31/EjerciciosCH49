@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - HTML</title>
+</head>
+<body>
+    <!-- Formularios en HTML
+    Un formulario es un elemento donde regularmente encontramos
+    una estructura con la que nuestros usuarios finales 
+    pueden interactuar para realizar diversas acciones, entre
+    las principales contramos:
+
+    -Registrarse
+    -Inicio de sesion
+
+
+    Para construir o indicar que un elemento se trata de un 
+    formulario, se utiliza la siguiente etiqueta:
+
+
+    <form>
+    Principalmente, esta etiqueta utiliza fundamentalmente dos
+    atributos:
+
+    -action: se refiere al archivo a donde la informacion colocada
+    en los campos de entrada de datos seran enviados. Ejemplo
+    "./script.js"
+    
+    - method: hace referencia al metodo HTTP con el que el
+    formulario debe de trabajar la infomacion recibidad en los
+    campos de entrada de datos. Los valores que se pueden colocar
+    son los siguientes:
+
+        -GET: Tiene las siguientes caracteristcas
+            * Un limite de caracteres que se pueden enviar, ese 
+            limite es de 3000 caracteres
+
+            *Los datos recibidos en las entradas de datos se
+            muestran en la URL del navegador.
+
+            *NO se recomienda utilizar este metodo para datos
+            sensibles
+
+        - POST: Muestra las siguientes diferencias con respecto
+        a GET
+
+            * No hay limite de caracteres que se puedan recibir
+            * Los datos recibidos no se muestran en la URL
+            * Es el metodo recomendado para cuando necesitamos enviar
+            la informacion recibida, por ejemplo, a una base de datos
+
+-----------------------------------------------------------------------------------------
+        Los elementos que forman parte de un formulario son los siguientes:
+
+        <label>: Repreesenta una etiqueta con un texto que nos
+        indica la información que debe colocarse dentro de un
+        campo de entrada en particular
+
+            Atributos de la etiqueta <label>
+                for: por temas de accesibilidad es importante
+                que coloquemos este atributo.
+                Hace referencia al input con el que se relaciona. El
+                Valor que debe adquirir es un id previamente colocado
+                dentro de mi input
+                
+
+
+        <input>: Es el elemento de entrada de datos donde el usuario
+        final coloca la informacion solicitada
+        
+            Atributos de la etiqueta <input>
+            
+            type: indica el tipo de campo de entrada que se
+            muestra en la ventana del navegador
+            Algunos son:
+            -enviar (submit)
+            -numero (number)
+            -contraseña  (password)
+            -texto  (text)
+            -radio   
+            -casilla de verificacion (checkbox)
+            -archivo (file)
+            -boton (botton)
+
+
+    -->
+
+
+    <form action="./script.js" method="post">
+        <label for="name-ipt">Name</label>
+        <input type="text" id="name-ipt" required>
+        <label for="age-ipt">Age:</label>
+        <input type="number" name="age" id="age-ipt" max="100" min="0">
+        <label for="email-ipt">Email</label>
+        <input type="email" name="email" id="email-ipt" required>
+        <label for="password-ipt">Password</label>
+        <input type="password" name="password" id="password-ipt">
+        <label for="image-ipt">Image</label>
+        <input type="file" name="user_image" id="image-ipt">
+        <label for="agree-checkbox">I agree:</label>
+        <input type="checkbox" name="accept" id="agree-checkbox">
+        <label for="disagree-checkbox">I disagree</label>
+        <input type="checkbox" name="accept" id="disagree-checkbox">
+        <label for="option-ipt-one">Option 1</label>
+        <input type="radio" name="option-ipt" id="option-ipt-one">
+        <label for="option-ipt-two">Option 2</label>
+        <input type="radio" name="option-ipt" id="option-ipt-two">
+        <!-- <input type="submit"> -->
+
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+</html>

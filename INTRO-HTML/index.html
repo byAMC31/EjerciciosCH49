@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Viewport: pantalla del dispositivo
+
+        content= width=dvice-width  
+        se refiere al ancho que ocupara el dispositivo
+        
+
+    -->
+
+    <title>Intro - HTML</title>
+</head>
+
+<body>
+
+    <!--
+Objetivos para la sesión
+
+* Crear documentos HTML básicos.
+
+* Usar etiquetas HTML dentro de un documento HTML.
+
+* Describir la estructura básica de un sitio HTML.
+
+* Usar las propiedades de etiquetas HTML.
+
+* Usar etiquetas de cabeceras de texto: <h1>, <h2>, <h3>, <h4>, <h5>, <h6>
+
+* Usar la etiqueta de párrafo: <p>
+
+* Usar etiquetas de regla horizontal: <hr>
+
+* Usar etiquetas de enlace/anclaje/hipervinculo: <a> -anchor
+
+* Usar etiquetas de lista: 
+    <ul> lista desordenada: 
+    <ol> lista ordenada: 
+    <li> elemento de lista.
+
+* Usar etiqueta de imagen: <img>
+
+* Usar etiqueta divisoria: <div>
+
+* Usar etiqueta de texto: <span>
+
+* Crear una página HTML básica usando 5 etiquetas diferentes.-->
+
+
+
+
+    <!--Etiquetas de encabezado-->
+    <!--
+        Dentro de HTML los encabezados tienen un papel
+        importante ya que nos permiten identificar un texto
+        como un titulo
+
+        Los encabezados disponibles en HTML son los siguientes:
+        H1, H2, H3, H4, H5, H6
+
+        Practica reomendada: solo se utiliza un h1 por 
+        cada pagina dentro de HTML
+    -->
+
+
+    <!-- Etiquetas semanticas:  porque es un texto que
+        representa un parrafo
+    -->
+
+    <h1>Primer encabezado</h1>
+    <h2>Segundo encabezado</h2>
+    <h3>Tercer encabezado</h3>
+    <h4>Cuarto encabezado</h4>
+    <h5>Quinto encabezado</h5>
+    <h6>Sexto encabezado</h6>
+
+    <!--Etiqueta de parrafo-->
+    <!-- La etiqueta <p> representa un parrafo dentro de
+        mi documento
+
+        <b> - bold (negrita)
+        <i> - italic (cursiva)
+
+        Etiquetas de regla horizontal
+
+        La etiqueta <hr> separa con una linea horizontal los
+        diferentes párrafos que se incluyen dentro de mi p+agina
+
+    -->
+    <p id="parrafo-ejemplo">Texto sencillo de ejemplo para utilizar
+        las etiquetas de párrafo dentro de HTML
+    </p>
+    <hr>
+    <P>Independiente de que el espacio en blanco exista en
+        mi anterior parrafo, el siguiente elemento se
+        colocara debajo de este ultimo
+    </P>
+
+
+
+    <!-- <p><b><i>Hola estoy en negrita y cursiva</i></b></p> -->
+    <!--ctrl+k, ctrl+c para comentar partes de codigo-->
+
+
+    <!-- Etiquetas de anclaje-->
+    <!-- Representan hipervinculos dentro de nuestra pagina
+    Son elementos que nos sirven para navegas de las
+    siguientes maneras
+
+    -Desplazamiento dentro de la misma pagina
+    -Salir del sitio a uno externo
+    -Navegar entre las diferentes paginas de el sitio
+
+
+    target: especifica donde debe abrirse mi hipervinculo
+
+    valor default: _self
+
+    abrir en una pestaña nueva: _blank
+    abrir en la misma pestaña: _Self
+    -->
+
+    <!-- Sitio externo: _self es el valor por defecto en target-->
+    <a href="https://google.com.mx" target="_blank">Google</a>
+
+    <!-- Desplazamiento dentro de mi misma pagina -->
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae debitis laboriosam mollitia vero iste eius id
+        aliquam obcaecati rerum amet cumque, dolorum ipsa corrupti excepturi fugiat necessitatibus in accusantium.
+        Aliquam soluta quam unde, perspiciatis cum repudiandae aliquid nobis? Quidem, laborum adipisci, et, cupiditate
+        reprehenderit rerum repellat magni aliquid corporis officia ut necessitatibus. Natus consectetur, tenetur
+        perferendis esse a at officia, maxime accusamus reprehenderit sunt, quidem nisi repellat sequi architecto
+        eveniet illum iure perspiciatis libero earum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae debitis laboriosam mollitia vero iste eius id
+        aliquam obcaecati rerum amet cumque, dolorum ipsa corrupti excepturi fugiat necessitatibus in accusantium.
+        Aliquam soluta quam unde, perspiciatis cum repudiandae aliquid nobis? Quidem, laborum adipisci, et, cupiditate
+        reprehenderit rerum repellat magni aliquid corporis officia ut necessitatibus. Natus consectetur, tenetur
+        perferendis esse a at officia, maxime accusamus reprehenderit sunt, quidem nisi repellat sequi architecto
+        eveniet illum iure perspiciatis libero earum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae debitis laboriosam mollitia vero iste eius id
+        aliquam obcaecati rerum amet cumque, dolorum ipsa corrupti excepturi fugiat necessitatibus in accusantium.
+        Aliquam soluta quam unde, perspiciatis cum repudiandae aliquid nobis? Quidem, laborum adipisci, et, cupiditate
+        reprehenderit rerum repellat magni aliquid corporis officia ut necessitatibus. Natus consectetur, tenetur
+        perferendis esse a at officia, maxime accusamus reprehenderit sunt, quidem nisi repellat sequi architecto
+        eveniet illum iure perspiciatis libero earum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae debitis laboriosam mollitia vero iste eius id
+        aliquam obcaecati rerum amet cumque, dolorum ipsa corrupti excepturi fugiat necessitatibus in accusantium.
+        Aliquam soluta quam unde, perspiciatis cum repudiandae aliquid nobis? Quidem, laborum adipisci, et, cupiditate
+        reprehenderit rerum repellat magni aliquid corporis officia ut necessitatibus. Natus consectetur, tenetur
+        perferendis esse a at officia, maxime accusamus reprehenderit sunt, quidem nisi repellat sequi architecto
+        eveniet illum iure perspiciatis libero earum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae debitis laboriosam mollitia vero iste eius id
+        aliquam obcaecati rerum amet cumque, dolorum ipsa corrupti excepturi fugiat necessitatibus in accusantium.
+        Aliquam soluta quam unde, perspiciatis cum repudiandae aliquid nobis? Quidem, laborum adipisci, et, cupiditate
+        reprehenderit rerum repellat magni aliquid corporis officia ut necessitatibus. Natus consectetur, tenetur
+        perferendis esse a at officia, maxime accusamus reprehenderit sunt, quidem nisi repellat sequi architecto
+        eveniet illum iure perspiciatis libero earum.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae debitis laboriosam mollitia vero iste
+        eiusidaliquam obcaecati rerum amet cumque, dolorum ipsa corrupti excepturi fugiat necessitatibus in accusantium.
+        Aliquam soluta quam unde, perspiciatis cum repudiandae aliquid nobis? Quidem, laborum adipisci, et, cupiditate
+        reprehenderit rerum repellat magni aliquid corporis officia ut necessitatibus. Natus consectetur, tenetur
+        perferendis esse a at officia, maxime accusamus reprehenderit sunt, quidem nisi repellat sequi architecto
+        eveniet illum iure perspiciatis libero earum.</p>
+
+    <a href="#top">Volver al inicio</a>
+    <!-- Vuelve al inicio de la pagina -->
+
+    <a href="#parrafo-ejemplo">Texto de ejemplo</a>
+    <!-- shift+alt+f formatear documento-->
+
+    <!-- Navegar entre las diferentes paginas de mi sitio o app -->
+
+    <a href="./external.html">Pag. Externa</a>
+
+    <!--Etiquetas de listas  -->
+    <!--Tenemos 2 tipos de listas dentro de HTML
+       
+        1.- Lista desordenada: <ul>
+        Basicamente es una lista
+        donde los elementos que se enucentran dentro de 
+        ella no es necesario colocarlos en un orden en
+        especifico
+            
+        2.Lista ordenadas: <ol>
+        si necesitamos colocar los elementos de una cierta forma
+        o siguiendo un orden especifico
+    
+        La manera en que se colocan los elementos que forman
+        parte de la lista son las etiquetas <li>- List item
+    -->
+
+    <ul>
+        <li> <a href="https://google.com" target="_blank">
+                <img src="./imagen.jpg" alt="fondo azul con verde" width="100px" height="100px">
+            </a></li>
+        <li>Elemento uno</li>
+        <li>Elemento dos</li>
+
+    </ul>
+
+    <ol type="I">
+        <li>texto de ejemplo</li>
+        <li>texto de ejemplo</li>
+        <li>texto de ejepmo</li>
+
+    </ol>
+
+    <!-- Etiqueta de imagen -->
+    <!-- Nos permite colocar un elemento multimedia de tipo imagen 
+    
+    utiliza 2 atributos principales
+    src= source = se coloca la ruta de la imagen
+    alt= texto alternativo = por cuestiones de accesibilidad
+        es un texto alternativo
+
+    Podemos modificar el tamaño de la imagen con 
+    width(ancho) y height(alto)
+
+    -->
+    <a href="https://google.com" target="_blank">
+        <img src="./imagen.jpg" alt="fondo azul con verde" width="100px" height="100px">
+    </a>
+
+    <img src="./imagen.jpg" alt="fondo azul con verde" width="100px" height="100px">
+    <!-- convertir a webp para hacer mas rapida la carga de la imagen -->
+
+    <!-- Etiquetas contenedoras -->
+    <!-- 
+        Principalmente se usan etiquetas contenedoras (div)
+        para agrupar una serie de elementos sobre los cuales
+        queremos aplicar ya sean:
+
+        --Estilos de CSS
+        --Funcionalidades/Contenidos a traves de JS
+
+     -->
+    <div style="border: 1px solid black; text-align: center; font-family: Arial, Helvetica, sans-serif;">
+        <img src="./perfil.jpeg" alt="foto de Adrian Martinez" width="150px" height="150px">
+        <h3>Adrian Martinez</h3>
+        <h3>Ingeniero en Sistemas Computacionales</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut ad doloribus error tempora distinctio
+            reiciendis vitae dolore. Eos ad dignissimos minima unde ducimus explicabo deleniti laudantium sequi eius
+            optio deserunt obcaecati suscipit, at velit asperiores doloremque excepturi vero neque veritatis! Ipsum
+            nihil totam iure dolor facere qui, aspernatur cum.</p>
+    </div>
+
+    <!-- Etiqueta de formato de texto -->
+    <!-- 
+        <span> : 
+     Nos sirven para separar diferentes partes de un texto
+     y podemos hacer varias cosas con esto, por ejemplo
+     dar cierto formato a una parte del texto
+        -->
+
+    <p>Lorem, ipsum dolor <span style="display: block; background-color: rgb(197, 171, 221); text-decoration: underline; color: rgb(4, 4, 82);"> sit amet consectetur</span> adipisicing elit. Aliquam recusandae dicta, amet placeat laudantium
+        dolorum nesciunt enim! Non id animi enim officiis beatae, porro placeat laudantium eveniet delectus totam
+        sapiente iusto nulla? Qui repellat ullam porro excepturi assumenda cum labore fugiat nam corporis, tempora,
+        earum enim id a tempore in.</p>
+
+
+</body>
+
+
+</html>

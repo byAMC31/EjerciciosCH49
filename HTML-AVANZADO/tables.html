@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <style>
+        table, td, th{
+            border: 1px solid black;
+            /* border-collapse: collapse;  */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+        HTML - Avanzado
+
+    * Definir y usar tablas en HTML.
+
+    * Definir y usar formularios HTML con las siguientes etiquetas: <form> <input> <label> <button>
+
+    * Explicar y usar los tipos de entrada: enviar, número, contraseña, texto, radio, archivo y botón.
+     -->
+
+    <!-- Tablas - HTML
+        Para construir una tabla dentro de HTML, necesitamos indicar que el elemento
+        se trata precisamente de una tabla, para ello, utilizaremos la
+        siguiente etiqueta:
+        
+        <table>
+
+            Dentro de una tabla, encontraremos los siguientes elementos
+            *Encabezados
+            *Filas
+            *Columnas
+
+    Cada uno de estos elementos se especifica/construye con una etiqueta diferente
+
+            Para encabezados utilizaremos
+            <th> (table head): se refiere al encabezado de una columna dentro de mi tabla
+
+            Para las filas, tenemos que colocar la etiqueta:
+            <tr>(table row): construye una fila nueva dentro de mi tabla
+
+                Es importante recordar que las filas se construyen en direccion horizontal
+
+            Finalmente, para las columnas o los datos de mi tabla, usamos:
+            <td> (table data): son las columnas dentro de mi tabla
+
+
+                ------------------------------------------------------------------------------------------
+            Atributos dentro de una tabla
+
+             Un elemento dentro de la tabla, sin importar si es un
+            <th> o <td> puede tomar mas espacios de los que por defecto adquiere, en direccion
+            vertical u horizontal, para ello utilzamos los siguientes atributos:
+
+            colspan: {vertical}: un elemento puede ocupar n cantidades de espacios dentro de la columna
+
+            
+            rowspan: {horizontal}: un elemento puede ocupar n cantidades de espacios dentro de la fila
+
+
+    -->
+
+    <table>
+        <tr>
+            <th colspan="2" rowspan="5">Name</th>
+            <th>Age</th>
+            <th>Fav color</th>
+        </tr>
+        <tr>
+            <td>James</td>
+            <td>38</td>
+            <td>Red</td>
+        </tr>
+        <!-- tr>td*3{Palabra} -->
+        <tr>
+            <td>Rose</td>
+            <td>25</td>
+            <td>Orange</td>
+        </tr>
+        <tr>
+            <td>Miles</td>
+            <td>32</td>
+            <td>Green</td>
+        </tr>
+        
+        <!-- tr*2>td*3{message} -->
+     
+        <tr>
+            <td>Annie</td>
+            <td>34</td>
+            <td>Blue</td>
+        </tr>
+    </table>
+
+    <!-- table>tr*3>td*3 -->
+
+
+
+</body>
+
+</html>

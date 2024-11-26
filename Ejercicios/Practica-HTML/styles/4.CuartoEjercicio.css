@@ -1,0 +1,20 @@
+body {
+    margin-top: 5px;
+    font-family: Arial, sans-serif; 
+    background-color: #9097f1;
+    padding: 20px;
+}
+
+h3 {
+    color: #0c4552;
+}
+
+ul {
+    padding-left: 20px;
+    font-weight: bold;
+
+}
+
+ol {
+    font-weight: bold;
+}
