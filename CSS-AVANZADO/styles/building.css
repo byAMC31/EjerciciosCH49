@@ -1,0 +1,285 @@
+:root {
+    --bg-color: #DFF2EB;
+    --primary-color: #B9E5E8;
+    --secondary-color: #7AB2D3;
+    --hg-color: #4A628A;
+    background-color: var(--bg-color);
+    color: var(--hg-color);
+    width: 100vw;
+    /* view width */
+    height: 500vh;
+    ;
+    /* view height */
+    margin: 0;
+}
+
+/* 
+Atributo position dentro de css
+Define la posicion que adquiere dentro de mi viewport (pantalla)
+Un elemento dentro del HTML. Esto lo hace con respecto a un 
+elemento ancestro que lo contenga. Ejemplo::after
+
+<div>
+<p>texto de ejemplo </p>
+</div>
+
+En este caso, el elemento ancestro para mi elemento <p> es el
+elemento que lo contiene o envuelve, osea, <div>
+
+Que valores puede adquirir esta propiedad dentro de CSS
+
+    -static
+    -relative
+    -fixed
+    -sticky
+    -absolute
+
+*/
+
+/* Estilos para los contnedores de la página */
+
+div.container {
+    background-color: var(--primary-color);
+    height: 300px;
+}
+
+div.item {
+    background-color: var(--secondary-color);
+}
+
+/* 
+    position: static
+    El valor static(Estático) para los elementos dentro de mi
+    html es el que viene por defecto, si es que decidimos
+    no modificar el valor de esta propiedad en CSS
+    
+    
+
+*/
+div#static-container {
+    position: static;
+
+}
+
+/* Position: Relative 
+    El valor relative(relativa) para los elementos dentro de 
+    mi HTML, hace referencia a que la posicion que puede 
+    adquirir mi elementro dentro del navegador es, como su
+    nombre indica relativo.
+
+    A quien/qué elemento es relativa esta posicion?
+    Al elemento ancestro que envuelva a mi elemento
+
+    Permite ajustar su posición usando top, right, bottom, o left
+
+    Propiedades que me permiten mover a mi elemento en las diferentes
+    direccion
+    (x,y) y (-x,-y)
+
+    -top: se refiere a que el elemento se desplazara n unidades
+            hacia abajo dentro de mi pantalla
+    
+    -right: se refiere a que el elemento se desplazara n unidades
+            hacia mi izquierda dentro de mi pantalla
+            
+    -buttom: se refiere a que el elemento se desplace n unidades
+            hacia arriba
+
+    -left: se refiere a que el elemento se desplazara n
+            unidades hacia la derecha
+
+    */
+
+div#relative-container {
+    position: relative;
+    top: 40px;
+    /* bottom: 50px; */
+    left: 30px;
+    /* right: 30px; */
+}
+
+
+/* Position fixed
+        El valor fixed para un elementro dentro de HTML
+        quiere decir que mi elemento, sin importar si yo
+        me desplazo hacia abajo dentro de mi pantalla, el
+        elemento se quedará fijo en este desplazamiento */
+
+div#fixed-container {
+    position: fixed;
+    border: 1px solid var(--hg-color);
+
+}
+
+/* Position sticky
+        Sticky le agrega un comportamiento de "adhesion" a la
+        pantalla sin importar hacia donde me desplace dentro
+        de la misma. Tengo para eso que indicar a partir de 
+        que momento o valor de posicion en la pantalla el elemento
+        se quedara adherido
+
+    */
+
+div#sticky-container {
+    position: sticky;
+    top: 0px;
+
+}
+
+
+div.container-sticky {
+    border: 1px solid var(--hg-color);
+    height: 200px;
+}
+
+
+/* 
+Position: absolute
+
+Absolute y relative funcionan de manera similar, el 
+elemento hijo se posicionara dentro de la pantalla
+con respecto al elemento ancesto. La principal
+diferencia entre relative y absolute es la siguiente::after
+
+Si: si mi elemento ancestro tiene un valor para la propiedad
+position diferente al valor default (static), el elemento
+hijo se posicionará de manera relativa a este elemento.
+
+
+si no: si mi elemento ancestro NO tiene un valor diferente de
+static para la propiedad position, entonces, el elemento hijo
+se posicionara dentro de la pantalla con respecto al viewport
+
+
+*/
+
+
+/* 
+funciona parecido a relative
+es mas flexible
+-si el elemento ancestro se pone en static se pone de acuerdo
+al vewport
+*/
+
+
+div.container-absolute {
+    border: 3px solid var(--hg-color);
+    height: 200px;
+    position: static;
+    top: 0;
+}
+
+
+div#absolute_container {
+    border: 1px dashed var(--hg-color);
+    position: absolute;
+    top: 30px;
+}
+
+
+/* -------------------------DISPLAY */
+
+/* 
+Propiedad Display en CSS
+
+Display define la manera en la que un elemento
+dentro de mi HTML será renderizado en la pantalla
+de mi navegador.
+
+
+Valores para la propiedad display
+    -noce
+    -Block
+    -Inline
+    -Inline-block
+    -flex
+    -grid
+
+*/
+/* Display:none
+Con este valor los elementos NO se renderizan
+dentro de la pantalla de mi navegador. 
+
+Esto no quiere decir que elemento deje
+de existir, solo NO se muestra en pantalla, 
+pero en la memoria, sigue existiendo.
+*/
+
+div#none {
+     display: none; 
+
+}
+
+
+
+/* Display: block
+Block es el valor de algunos elementos en HTML 
+para la propiedad display, entre ellos, encontramos:
+    -div
+    -p
+    -h1-h6
+    -ol,ul
+    -li
+Este comportamiento ser efiere a que el elemento abarca
+el ancho completo de la pantalla
+Nos permite agregar o modificar los valores para ancho y alto
+(width y height) para los elementos html que tengan este valor
+para la propiedad display. 
+
+
+*/
+
+img {
+    display: block;
+    width: 100px;
+    height: 100px;
+
+}
+
+
+/* Display:inline
+Se refiere a que el elemento se comporta como un elemento en linea
+y se distribuye de esta manera con respecto a otros elementos dentro de
+mi HTML. Algunos ejemplos de etiquetas que tienen este valor por
+defecto son:
+    inline
+    <input>
+    <label>
+    <a>
+    <img>: puede cambiar a block, por defecto esta inline
+    <span>
+    <button>
+
+*/
+
+h1,
+h2 {
+    display: inline;
+}
+
+/* Display: inline-block 
+    Este valor combina las propiedades de inline y de block
+    de la siguiente manera: 
+
+    -inline: el elemento se comporta como un elemento en linea es decir, 
+    se coloca de manera horizontal con respecto a otros elementos dentro de
+    la pantalla de mi navegador
+    
+    -block: a pesar de que mi elemento se encuentra dentro de la misma 
+    linea respecto a otros elementos, se pueden modificar algunas 
+    propiedades como el ancho y el alto
+
+*/
+
+/* 
+se comporta como el inline pero obtiene las propiedades de block
+Se puede modificar tanto el ancho como el alto
+*/
+
+span {
+    display: inline-block;
+    height: 40px;
+    width: 20px;
+}
+
+

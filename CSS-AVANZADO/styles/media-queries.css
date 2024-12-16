@@ -1,0 +1,12 @@
+/* Responde de acuerdo a el tamaño del dispositivo
+    dentro de el se agregan las propiedades que segun
+    el tamaño van a apareces
+*/
+
+@media (max-width: 1250px) {
+   h1,h2{
+     color: brown;
+     text-align: center;
+
+   }
+  }

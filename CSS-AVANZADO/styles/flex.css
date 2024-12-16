@@ -1,0 +1,80 @@
+/* 
+    Display: flex
+    
+    Flex nos permite distribuir n cantidad de elementos
+    que se encuentran dentro de un contenedor ancestro 
+    con esta propiedad, de manera que su tamaño se
+    mantenga igual independientemente del espacio disponible
+    para que se muestren los mismos en la pantalla de mi 
+    navegador.
+
+    Propiedades que podemos usar con flex
+
+        -Justify-content: Me ayuda a justificar los elementos
+        dentro de mi contenedor ancestro y esto se ve afectado
+        por el valor seleccionado
+                *space-aroud: Justifica los elementos creando
+                un espacio alrededor de cada uno de ellos.
+                *space-beetwen: Justifica los elementos creando
+                un espacio entre cada uno de los mismos
+
+        -align-item: Mueve o cambia de lugar en sentido vertical
+        los elementos dentro de mi contenedor ancestro. Puede
+        pasarlos hacia arriba(por defecto), hacia en medio (center)
+        o hasta el final de mi contenedor ancestro (end).
+
+        -flex-wrap: crea un especie de "envoltorio" sobre cada
+        uno de los elementos dentro del contenedor ancestro, de
+        manera que podemos evitar que, si el tamaño de la pantalla
+        no es suficiente para mostrar los elementos dentro del 
+        viewport, estos no se empalmen ni se pierdan en la pantalla,
+        sino que mantengan siempre el mismo tamaño y se distribuyan
+        a lo largo de la misma sin importar que tan grande o chica 
+        es la pantalla.
+
+        -order: puede modificar el orden en el que los elementos aparecen
+        dentro de mi contenedor ancestros, modificando para el valor de 
+        la propiedad un valor numerico que servirá de referencia para
+        evaluar con respecto al resto de elementos qcomo deberán aparecer
+        ordenados. El elementos con el valor númerico más grande, siempre
+        se coloca al final.
+        
+*/
+div.flex-container{
+    display: flex;
+    justify-content: space-between; /*HORIZONTAL*/
+    /* space-aroud espacio entre los elementos
+    space-beetwen: espacio entre elementos */
+    align-items: center; /* VERTICAL*/
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* 
+Flex permite distribuir los elemento de forma horizontal
+independientemente del tipo de pantalla
+
+*/
+
+div.item{
+    width: 100px;
+    height: 50px;
+    text-align: center;
+    font-size: 35px;
+    border: 1px solid var(--hg-color);
+}
+
+
+div#item-one{
+    order: 1; /*El valor por defecto es 0*/
+}
+
+
+div#item-two{
+    order:2;
+}
+
+div#item-three{
+    order: 3;
+}
+
